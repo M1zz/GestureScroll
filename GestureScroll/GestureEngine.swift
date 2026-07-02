@@ -322,10 +322,10 @@ final class GestureEngine: ObservableObject {
     /// Cursor mode: map the normalized hand position to the main display and drive
     /// the pointer. The inner 70% of the frame maps to the full screen (so the hand
     /// never has to chase the frame edges) and an EMA smooths tracking.
-    /// Click = ✊ make a fist (or pinch); opening the hand releases — so clench-open
-    /// is a click and moving while clenched is a drag. The fist must persist a beat
-    /// before pressing, so pose transitions can't fire phantom clicks; release is
-    /// immediate (releasing is always safe).
+    /// Click = 🤏 pinch (thumb tip to index tip); releasing the pinch lets go — so
+    /// pinch-release is a click and moving while pinched is a drag. The pinch must
+    /// persist a beat before pressing, so pose transitions can't fire phantom
+    /// clicks; release is immediate (releasing is always safe).
     private func handleCursor(_ pos: CGPoint, pinch pressing: Bool) {
         guard SystemControl.hasAccessibilityPermission() else {
             hasPermission = false
@@ -350,13 +350,13 @@ final class GestureEngine: ObservableObject {
 
         if pressing {
             if cursorPressed {
-                SystemControl.moveMouse(to: p, dragging: true)     // fist held → drag
+                SystemControl.moveMouse(to: p, dragging: true)     // pinch held → drag
             } else {
                 if pressCandidateSince == nil { pressCandidateSince = Date() }
                 if Date().timeIntervalSince(pressCandidateSince!) >= 0.12 {
                     cursorPressed = true                            // debounced → press
                     SystemControl.mouseDown(at: p)
-                    lastGesture = "Click ✊"
+                    lastGesture = "Click 🤏"
                     pulseCommand()
                 } else {
                     SystemControl.moveMouse(to: p)                  // not confirmed yet
@@ -365,9 +365,9 @@ final class GestureEngine: ObservableObject {
         } else {
             pressCandidateSince = nil
             if cursorPressed {
-                cursorPressed = false                               // open hand → release
+                cursorPressed = false                               // pinch released → let go
                 SystemControl.mouseUp(at: p)
-                lastGesture = "Release ✋"
+                lastGesture = "Release 🖐"
                 pulseCommand()
             } else {
                 SystemControl.moveMouse(to: p)

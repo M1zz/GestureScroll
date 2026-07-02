@@ -130,14 +130,17 @@ struct ContentView: View {
 
     private var controls: some View {
         VStack(alignment: .leading, spacing: 16) {
+            // No custom font inside the segments — NSSegmentedControl renders its
+            // own label metrics, and an overridden font shifts the text off-center.
             Picker("Mode", selection: $engine.mode) {
                 ForEach(GestureEngine.ControlMode.allCases) {
-                    Text($0.rawValue).font(.title3).tag($0)
+                    Text($0.rawValue).tag($0)
                 }
             }
             .pickerStyle(.segmented)
+            .labelsHidden()
             .controlSize(.large)
-            .font(.title3)
+            .frame(maxWidth: .infinity)
 
             Picker("Camera", selection: Binding(
                 get: { engine.selectedCameraID },
@@ -229,7 +232,7 @@ struct ContentView: View {
                     ("🤟", "손가락 3개 — 이전 (←)", .pink)]
         case .cursor:
             return [("🖐", "손을 움직이면 커서가 따라감", .indigo),
-                    ("✊✋", "주먹 쥐었다 펴기 — 클릭 (쥔 채 이동 = 드래그)", .orange)]
+                    ("🤏", "엄지+검지 집었다 놓기 — 클릭 (집은 채 이동 = 드래그)", .orange)]
         }
     }
 

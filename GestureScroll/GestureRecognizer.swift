@@ -17,7 +17,7 @@ enum Gesture: String {
 ///   Keynote:          ✌️ hold = Next · 🤟 hold = Previous (☝️/✊ do nothing,
 ///                     so natural presentation hand-talk can't change slides)
 ///   PDF:              ✊ = down · ☝️ = up · ✌️ = Next · 🤟 = Previous
-///   Cursor (mouse):   hand steers the pointer · 🤏 pinch = click / hold = drag
+///   Cursor (mouse):   hand steers the pointer · 🤏 pinch = click / pinch-move = drag
 ///
 /// Safety layers: an open hand (✋) must "arm" Listening first; poses must be
 /// held briefly (debounce, longer for Next/Previous); Next/Previous fire once
@@ -117,13 +117,14 @@ final class GestureRecognizer {
         // Keep armed while the hand is actively posing.
         armedUntil = now.addingTimeInterval(armWindow)
 
-        // --- Cursor mode: every hand shape steers the pointer; ✊ making a fist
-        //     presses the mouse button and opening the hand releases it (쥐었다
-        //     펴기 = 클릭, 쥔 채 이동 = 드래그). A closing fist often reads as a
-        //     pinch too (thumb meets index), so pinch counts as pressing as well.
+        // --- Cursor mode: every hand shape steers the pointer; 🤏 pinching
+        //     (thumb tip to index tip) presses the mouse button and releasing
+        //     the pinch lets go (집기 = 클릭, 집은 채 이동 = 드래그). A pinch
+        //     barely moves the wrist the cursor tracks, so clicking doesn't
+        //     shove the pointer the way clenching a fist did.
         //     All mapping/smoothing/debounce lives in the engine. ---
         if mode == .cursor {
-            let pressing = count == 0 || fingers.pinch
+            let pressing = fingers.pinch
             if let p = wrist ?? indexTip { onCursor?(p, pressing) }
             return
         }
