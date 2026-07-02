@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSCameraUsageDescription</key>
+    <string>GestureScroll uses the camera to detect your hand gestures so it can scroll and control the screen during presentations.</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>CFBundleName</key>
+    <string>GestureScroll</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.devkoan.GestureScroll</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>GestureScroll streams its status to your iPhone and Apple Watch on the local network.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_gscroll-st._tcp</string>
+        <string>_gscroll-st._udp</string>
+    </array>
+</dict>
+</plist>

@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BE96DCBF2675D50AA19D9B7 /* GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130B62C9A4C5CD8839BAD8C /* GestureRecognizer.swift */; };
+		71581EE699D05DDFBFEC4E26 /* SystemControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38A05032B7D575C92920344 /* SystemControl.swift */; };
+		88AE5932D4EC59D4AAE7AC3A /* HandPoseCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946ADDDD49B952B29884B0E9 /* HandPoseCamera.swift */; };
+		98F2AD07D7EC5022BF75E404 /* GestureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811B14F7746B5C1585DCDC16 /* GestureEngine.swift */; };
+		A1B2C3D4E5F60718293A4B5C /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5D /* HelpView.swift */; };
+		B5C4092E87515BD6A419CFEA /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B65384BDAB573BB0BB201E /* CameraPreview.swift */; };
+		EF99F7256CE65FD6B30DFB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC872AE36E9250109E49A97A /* ContentView.swift */; };
+		FF961A6A408F510E9208F277 /* GestureScrollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD0B9793C6356DC883261B2 /* GestureScrollApp.swift */; };
+		A1B2C3D4E5F60718293A4C01 /* GestureStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C00 /* GestureStatus.swift */; };
+		A1B2C3D4E5F60718293A4C03 /* StatusPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C02 /* StatusPresentation.swift */; };
+		A1B2C3D4E5F60718293A4C05 /* StatusBroadcaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C04 /* StatusBroadcaster.swift */; };
+		AA10000000000000000000B1 /* GestureScrollPhoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000A1 /* GestureScrollPhoneApp.swift */; };
+		AA10000000000000000000B2 /* PhoneStatusReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000A2 /* PhoneStatusReceiver.swift */; };
+		AA10000000000000000000B3 /* PhoneContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA10000000000000000000A3 /* PhoneContentView.swift */; };
+		AA10000000000000000000B4 /* GestureStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C00 /* GestureStatus.swift */; };
+		AA10000000000000000000B5 /* StatusPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C02 /* StatusPresentation.swift */; };
+		BB20000000000000000000B1 /* GestureScrollWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20000000000000000000A1 /* GestureScrollWatchApp.swift */; };
+		BB20000000000000000000B2 /* WatchStatusReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20000000000000000000A2 /* WatchStatusReceiver.swift */; };
+		BB20000000000000000000B3 /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB20000000000000000000A3 /* WatchContentView.swift */; };
+		BB20000000000000000000B4 /* GestureStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C00 /* GestureStatus.swift */; };
+		BB20000000000000000000B5 /* StatusPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4C02 /* StatusPresentation.swift */; };
+		AA10000000000000000000B6 /* GestureScrollWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BB20000000000000000000A4 /* GestureScrollWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC30000000000000000000B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC30000000000000000000A1 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1799A1F4E6605974A8179381 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B65384BDAB573BB0BB201E /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		811B14F7746B5C1585DCDC16 /* GestureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureEngine.swift; sourceTree = "<group>"; };
+		8CD0B9793C6356DC883261B2 /* GestureScrollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureScrollApp.swift; sourceTree = "<group>"; };
+		946ADDDD49B952B29884B0E9 /* HandPoseCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseCamera.swift; sourceTree = "<group>"; };
+		9B8AA9A2A9BA5FD18DC07D72 /* GestureScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F60718293A4B5D /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		D130B62C9A4C5CD8839BAD8C /* GestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizer.swift; sourceTree = "<group>"; };
+		DF743C668AE95EF48F766EA5 /* GestureScroll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GestureScroll.entitlements; sourceTree = "<group>"; };
+		EC872AE36E9250109E49A97A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4C00 /* GestureStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureStatus.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4C02 /* StatusPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPresentation.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4C04 /* StatusBroadcaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBroadcaster.swift; sourceTree = "<group>"; };
+		F38A05032B7D575C92920344 /* SystemControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemControl.swift; sourceTree = "<group>"; };
+		AA10000000000000000000A1 /* GestureScrollPhoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureScrollPhoneApp.swift; sourceTree = "<group>"; };
+		AA10000000000000000000A2 /* PhoneStatusReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneStatusReceiver.swift; sourceTree = "<group>"; };
+		AA10000000000000000000A3 /* PhoneContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContentView.swift; sourceTree = "<group>"; };
+		AA10000000000000000000A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA10000000000000000000A4 /* GestureScrollPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureScrollPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB20000000000000000000A1 /* GestureScrollWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureScrollWatchApp.swift; sourceTree = "<group>"; };
+		BB20000000000000000000A2 /* WatchStatusReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStatusReceiver.swift; sourceTree = "<group>"; };
+		BB20000000000000000000A3 /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
+		BB20000000000000000000A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB20000000000000000000A4 /* GestureScrollWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureScrollWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC30000000000000000000A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA10000000000000000000D4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AA10000000000000000000B6 /* GestureScrollWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7110709DB0758BE85F9923E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10000000000000000000D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB20000000000000000000D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		575AC474E92155D9BDD6732A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B8AA9A2A9BA5FD18DC07D72 /* GestureScroll.app */,
+				AA10000000000000000000A4 /* GestureScrollPhone.app */,
+				BB20000000000000000000A4 /* GestureScrollWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6964C0E7B2F2553089A68FEC = {
+			isa = PBXGroup;
+			children = (
+				9D9985A0A3FF5809917E9079 /* GestureScroll */,
+				AA10000000000000000000C1 /* GestureScrollPhone */,
+				BB20000000000000000000C1 /* GestureScrollWatch */,
+				575AC474E92155D9BDD6732A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA10000000000000000000C1 /* GestureScrollPhone */ = {
+			isa = PBXGroup;
+			children = (
+				AA10000000000000000000A1 /* GestureScrollPhoneApp.swift */,
+				AA10000000000000000000A2 /* PhoneStatusReceiver.swift */,
+				AA10000000000000000000A3 /* PhoneContentView.swift */,
+				AA10000000000000000000A7 /* Info.plist */,
+			);
+			path = GestureScrollPhone;
+			sourceTree = "<group>";
+		};
+		BB20000000000000000000C1 /* GestureScrollWatch */ = {
+			isa = PBXGroup;
+			children = (
+				BB20000000000000000000A1 /* GestureScrollWatchApp.swift */,
+				BB20000000000000000000A2 /* WatchStatusReceiver.swift */,
+				BB20000000000000000000A3 /* WatchContentView.swift */,
+				BB20000000000000000000A7 /* Info.plist */,
+			);
+			path = GestureScrollWatch;
+			sourceTree = "<group>";
+		};
+		9D9985A0A3FF5809917E9079 /* GestureScroll */ = {
+			isa = PBXGroup;
+			children = (
+				8CD0B9793C6356DC883261B2 /* GestureScrollApp.swift */,
+				EC872AE36E9250109E49A97A /* ContentView.swift */,
+				946ADDDD49B952B29884B0E9 /* HandPoseCamera.swift */,
+				D130B62C9A4C5CD8839BAD8C /* GestureRecognizer.swift */,
+				F38A05032B7D575C92920344 /* SystemControl.swift */,
+				811B14F7746B5C1585DCDC16 /* GestureEngine.swift */,
+				49B65384BDAB573BB0BB201E /* CameraPreview.swift */,
+				A1B2C3D4E5F60718293A4B5D /* HelpView.swift */,
+				A1B2C3D4E5F60718293A4C00 /* GestureStatus.swift */,
+				A1B2C3D4E5F60718293A4C02 /* StatusPresentation.swift */,
+				A1B2C3D4E5F60718293A4C04 /* StatusBroadcaster.swift */,
+				1799A1F4E6605974A8179381 /* Info.plist */,
+				DF743C668AE95EF48F766EA5 /* GestureScroll.entitlements */,
+				CC30000000000000000000A1 /* Assets.xcassets */,
+			);
+			path = GestureScroll;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61CCE653B4C5566480A0A709 /* GestureScroll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5F7D47B122E545290B23BC6 /* Build configuration list for PBXNativeTarget "GestureScroll" */;
+			buildPhases = (
+				46875295CB955BE8A98FF953 /* Sources */,
+				E7110709DB0758BE85F9923E /* Frameworks */,
+				9EFB346BABF358748FD463B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GestureScroll;
+			productName = GestureScroll;
+			productReference = 9B8AA9A2A9BA5FD18DC07D72 /* GestureScroll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA10000000000000000000E1 /* GestureScrollPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA10000000000000000000FA /* Build configuration list for PBXNativeTarget "GestureScrollPhone" */;
+			buildPhases = (
+				AA10000000000000000000D1 /* Sources */,
+				AA10000000000000000000D2 /* Frameworks */,
+				AA10000000000000000000D3 /* Resources */,
+				AA10000000000000000000D4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA10000000000000000000E2 /* PBXTargetDependency */,
+			);
+			name = GestureScrollPhone;
+			productName = GestureScrollPhone;
+			productReference = AA10000000000000000000A4 /* GestureScrollPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB20000000000000000000E1 /* GestureScrollWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB20000000000000000000FA /* Build configuration list for PBXNativeTarget "GestureScrollWatch" */;
+			buildPhases = (
+				BB20000000000000000000D1 /* Sources */,
+				BB20000000000000000000D2 /* Frameworks */,
+				BB20000000000000000000D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GestureScrollWatch;
+			productName = GestureScrollWatch;
+			productReference = BB20000000000000000000A4 /* GestureScrollWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		AA10000000000000000000E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35EC0FB9AA8E5F82A360DFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB20000000000000000000E1;
+			remoteInfo = GestureScrollWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		AA10000000000000000000E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB20000000000000000000E1 /* GestureScrollWatch */;
+			targetProxy = AA10000000000000000000E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXProject section */
+		35EC0FB9AA8E5F82A360DFBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					61CCE653B4C5566480A0A709 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AA10000000000000000000E1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					BB20000000000000000000E1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 11958FA2D8565C43A01DA9CE /* Build configuration list for PBXProject "GestureScroll" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6964C0E7B2F2553089A68FEC;
+			productRefGroup = 575AC474E92155D9BDD6732A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61CCE653B4C5566480A0A709 /* GestureScroll */,
+				AA10000000000000000000E1 /* GestureScrollPhone */,
+				BB20000000000000000000E1 /* GestureScrollWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EFB346BABF358748FD463B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC30000000000000000000B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10000000000000000000D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB20000000000000000000D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46875295CB955BE8A98FF953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF961A6A408F510E9208F277 /* GestureScrollApp.swift in Sources */,
+				EF99F7256CE65FD6B30DFB93 /* ContentView.swift in Sources */,
+				88AE5932D4EC59D4AAE7AC3A /* HandPoseCamera.swift in Sources */,
+				0BE96DCBF2675D50AA19D9B7 /* GestureRecognizer.swift in Sources */,
+				71581EE699D05DDFBFEC4E26 /* SystemControl.swift in Sources */,
+				98F2AD07D7EC5022BF75E404 /* GestureEngine.swift in Sources */,
+				B5C4092E87515BD6A419CFEA /* CameraPreview.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5C /* HelpView.swift in Sources */,
+				A1B2C3D4E5F60718293A4C01 /* GestureStatus.swift in Sources */,
+				A1B2C3D4E5F60718293A4C03 /* StatusPresentation.swift in Sources */,
+				A1B2C3D4E5F60718293A4C05 /* StatusBroadcaster.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA10000000000000000000D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10000000000000000000B1 /* GestureScrollPhoneApp.swift in Sources */,
+				AA10000000000000000000B2 /* PhoneStatusReceiver.swift in Sources */,
+				AA10000000000000000000B3 /* PhoneContentView.swift in Sources */,
+				AA10000000000000000000B4 /* GestureStatus.swift in Sources */,
+				AA10000000000000000000B5 /* StatusPresentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB20000000000000000000D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB20000000000000000000B1 /* GestureScrollWatchApp.swift in Sources */,
+				BB20000000000000000000B2 /* WatchStatusReceiver.swift in Sources */,
+				BB20000000000000000000B3 /* WatchContentView.swift in Sources */,
+				BB20000000000000000000B4 /* GestureStatus.swift in Sources */,
+				BB20000000000000000000B5 /* StatusPresentation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		170A9C6552C5569197485BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GestureScroll/GestureScroll.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GestureScroll/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.GestureScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		866FD823EAB55055B969CB06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA53DE14D5AE5642868F39F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CD8F37C45617523295DCFCA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = GestureScroll/GestureScroll.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GestureScroll/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.GestureScroll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA10000000000000000000F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GestureScrollPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.GestureScrollPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA10000000000000000000F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GestureScrollPhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.GestureScrollPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB20000000000000000000F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GestureScrollWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.GestureScrollPhone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		BB20000000000000000000F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = GestureScrollWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.GestureScrollPhone.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11958FA2D8565C43A01DA9CE /* Build configuration list for PBXProject "GestureScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				866FD823EAB55055B969CB06 /* Debug */,
+				BA53DE14D5AE5642868F39F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5F7D47B122E545290B23BC6 /* Build configuration list for PBXNativeTarget "GestureScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170A9C6552C5569197485BE3 /* Debug */,
+				CD8F37C45617523295DCFCA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA10000000000000000000FA /* Build configuration list for PBXNativeTarget "GestureScrollPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA10000000000000000000F1 /* Debug */,
+				AA10000000000000000000F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB20000000000000000000FA /* Build configuration list for PBXNativeTarget "GestureScrollWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB20000000000000000000F1 /* Debug */,
+				BB20000000000000000000F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35EC0FB9AA8E5F82A360DFBF /* Project object */;
+}

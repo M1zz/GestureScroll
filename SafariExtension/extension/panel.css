@@ -1,0 +1,72 @@
+#gs-panel {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 2147483647;
+  width: 240px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(28, 28, 32, 0.92);
+  color: #f2f2f7;
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  user-select: none;
+}
+#gs-panel .gs-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+#gs-panel .gs-title { font-weight: 700; letter-spacing: 0.2px; }
+#gs-panel .gs-close {
+  border: 0; background: transparent; color: #9a9aa2; font-size: 18px; line-height: 1;
+  cursor: pointer; padding: 0 4px;
+}
+#gs-panel .gs-close:hover { color: #fff; }
+
+#gs-panel .gs-preview {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 10px;
+}
+#gs-panel video {
+  width: 100%; height: 100%; object-fit: cover;
+  transform: scaleX(-1); /* selfie mirror to match hand coords */
+}
+#gs-panel .gs-pose {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.8));
+  transition: left 0.05s linear, top 0.05s linear, opacity 0.2s;
+  pointer-events: none;
+}
+
+#gs-panel .gs-bar {
+  height: 6px; border-radius: 3px; background: rgba(255,255,255,0.15);
+  overflow: hidden; margin-bottom: 10px; opacity: 0; transition: opacity 0.2s;
+}
+#gs-panel .gs-bar-fill {
+  height: 100%; width: 0%; background: #0a84ff; border-radius: 3px;
+  transition: width 0.1s linear;
+}
+
+#gs-panel .gs-toggle {
+  width: 100%; padding: 9px; margin-bottom: 10px;
+  border: 0; border-radius: 10px; cursor: pointer;
+  background: #0a84ff; color: #fff; font-weight: 700; font-size: 14px;
+}
+#gs-panel.gs-on .gs-toggle { background: #ff453a; }
+#gs-panel .gs-toggle:disabled { opacity: 0.5; cursor: default; }
+
+#gs-panel .gs-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 7px 0; color: #c7c7cc; }
+#gs-panel select, #gs-panel input[type="range"] { flex: 1; }
+#gs-panel select {
+  background: #3a3a3e; color: #fff; border: 0; border-radius: 8px; padding: 5px; font-size: 12px;
+}
+#gs-panel .gs-status {
+  margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.1);
+  color: #98989f; font-size: 12px; text-align: center;
+}
